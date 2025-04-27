@@ -6,7 +6,7 @@ on:
       target:
         description: '目标平台/架构'
         required: true
-        default: 'armsr/armv8'
+        default: 'armvirt/64'
       firmware_version:
         description: '固件版本'
         required: true
