@@ -6,11 +6,11 @@ on:
       target:
         description: '目标平台/架构'
         required: true
-        default: 'armvirt/64'
+        default: 'armsr/armv8'
       firmware_version:
         description: '固件版本'
         required: true
-        default: '22.03.5'
+        default: '23.05.0'
       plugin_source:
         description: '插件源码地址'
         required: true
@@ -18,7 +18,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-15.0.7
 
     steps:
     - name: 检出代码
